@@ -2,6 +2,7 @@
 
 A React-based project for managing and visualizing coffee delivery orders, focusing on a clean design, reusable components, and efficient routing.
 
+# _________________
 ### Tools
 - **TypeScript** – Adds static typing to JavaScript.
 - **Styled-components** – Enables writing CSS directly inside JavaScript files.
@@ -9,6 +10,7 @@ A React-based project for managing and visualizing coffee delivery orders, focus
 - **ESLint** – A code analysis tool that helps maintain consistent coding styles.
 - **Vite** – A fast development build tool that improves performance and offers instant Hot Module Replacement (HMR).
 
+# _________________
 ### Folder Structure
 ```bash
 react-coffee-delivery/
@@ -33,7 +35,7 @@ react-coffee-delivery/
 ├─ README.md
 └─ .gitignore
 ```
-
+# _________________
 ### Commands
 
 #### Clone Repo
@@ -51,9 +53,8 @@ npm install
 ```bash
 npm run dev
 ```
-
+# _________________
 ### Study Notes
-
 #### Configure Router básico:
 
 1 - Crie o arquivo routes.ts
@@ -64,6 +65,8 @@ npm run dev
 
 3 - Configure o BrowserRouter no main.tsx
     Envolva o <App> com o <BrowserRouter> para habilitar o sistema de rotas na aplicação.
+
+# _
 
 #### Configure Theme + Styles básico:
 
