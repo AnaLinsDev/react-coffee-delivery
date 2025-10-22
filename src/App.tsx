@@ -1,14 +1,5 @@
-import { Header } from "./components/Header";
-import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./routes";
 
 export function App() {
-  return (
-    <>
-      <BrowserRouter>
-        
-        <h1>APP</h1>
-      </BrowserRouter>
-      ,
-    </>
-  );
+  return <AppRoutes />;
 }

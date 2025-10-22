@@ -53,3 +53,14 @@ npm run dev
 ```
 
 ### Annotations
+
+#### Router básico:
+
+1 - Crie o arquivo routes.ts
+    Nele, utilize os componentes <Routes> e <Route> para definir cada rota, especificando o path e o componente que será renderizado.
+
+2 - Adicione o componente de rotas ao App.tsx
+    Importe o componente criado em routes.ts e o utilize como retorno do <App>.
+
+3 - Configure o BrowserRouter no main.tsx
+    Envolva o <App> com o <BrowserRouter> para habilitar o sistema de rotas na aplicação.
