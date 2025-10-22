@@ -1,64 +1,63 @@
 export const defaultTheme = {
-  svg: {
-    "text-decoration": "none"
-  },
-
   colors: {
     yellow: "#DBAC2C",
-    "yellow-light": "#F1E9C9",
-    "yellow-dark": "#C47F17",
+    yellowLight: "#F1E9C9",
+    yellowDark: "#C47F17",
 
     purple: "#8047F8",
-    "purple-light": "#EBE5F9",
-    "purple-dark": "#4B2995",
+    purpleLight: "#EBE5F9",
+    purpleDark: "#4B2995",
 
-    "base-title": "#272221",
-    "base-subtitle": "#403937",
-    "base-text": "#574F4D",
-    "base-label": "#8D8686",
+    baseTitle: "#272221",
+    baseSubtitle: "#403937",
+    baseText: "#574F4D",
+    baseLabel: "#8D8686",
 
-    "base-hover": "#D7D5D5",
-    "base-button": "#E6E5E5",
-    "base-input": "#EDEDED",
-    "base-card": "#F3F2F2",
+    baseHover: "#D7D5D5",
+    baseButton: "#E6E5E5",
+    baseInput: "#EDEDED",
+    baseCard: "#F3F2F2",
 
     background: "#FAFAFA",
     white: "#FFFFFF",
   },
 
   fonts: {
-    families: {
-      baloo2: {
-        family: "'Baloo 2', sans-serif",
-        opticalSizing: "auto",
-        style: "normal",
+    baloo2: {
+      family: "'Baloo 2', sans-serif",
+      opticalSizing: "auto",
+      style: "normal",
+      lineHeight: "130%",
+
+      text: {
+        xl: { fontSize: "48px", fontWeight: 800 },
+        l: { fontSize: "32px", fontWeight: 800 },
+        m: { fontSize: "24px", fontWeight: 800 },
+        s: { fontSize: "20px", fontWeight: 700 },
+        xs: { fontSize: "18px", fontWeight: 700 },
+      },
+    },
+
+    roboto: {
+      family: "'Roboto', sans-serif",
+      opticalSizing: "auto",
+      style: "normal",
+
+      text: {
+        l: { fontSize: "20px", fontWeight: 600, lineHeight: "130%" },
+        m: { fontSize: "16px", fontWeight: 600, lineHeight: "130%" },
+        s: { fontSize: "14px", fontWeight: 400, lineHeight: "130%" },
+        xs: { fontSize: "12px", fontWeight: 700, lineHeight: "130%" },
       },
 
-      roboto: {
-        family: "'Roboto', sans-serif",
-        opticalSizing: "auto",
-        style: "normal",
+      buttons: {
+        large: { fontSize: "14px", fontWeight: 400, lineHeight: "160%" },
+        medium: { fontSize: "12px", fontWeight: 700, lineHeight: "160%" },
       },
-    },
-    weight: {
-      regular: 400,
-      bold: 700,
-      extraBold: 800,
-    },
-    lineHeight: {
-      "130": "130%",
-      "160": "160%",
-    },
-    size: {
-      "10": "10px",
-      "12": "12px",
-      "14": "14px",
-      "16": "16px",
-      "18": "18px",
-      "20": "20px",
-      "24": "24px",
-      "32": "32px",
-      "48": "48px",
+
+      tags: {
+        default: { fontSize: "10px", fontWeight: 600, lineHeight: "130%" },
+      },
     },
   },
 };

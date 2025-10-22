@@ -30,8 +30,8 @@ export const AddressInfo = styled.header`
   padding: 8px;
   border-radius: 6px;
 
-  color: ${({ theme }) => theme.colors["purple-dark"]};
-  background-color: ${({ theme }) => theme.colors["purple-light"]};
+  color: ${({ theme }) => theme.colors.purpleDark};
+  background-color: ${({ theme }) => theme.colors.purpleLight};
 `;
 
 export const ButtonCarHeader = styled(NavLink)`
@@ -41,15 +41,15 @@ export const ButtonCarHeader = styled(NavLink)`
   padding: 8px;
   border-radius: 6px;
 
-  color: ${({ theme }) => theme.colors["yellow-dark"]};
-  background-color: ${({ theme }) => theme.colors["yellow-light"]};
+  color: ${({ theme }) => theme.colors.yellowDark};
+  background-color: ${({ theme }) => theme.colors.yellowLight};
 
   &:hover {
-    color: ${({ theme }) => theme.colors["yellow"]};
+    color: ${({ theme }) => theme.colors.yellow};
   }
 
   &.active {
     font-weight: bold;
-    color: ${({ theme }) => theme.colors["yellow"]};
+    color: ${({ theme }) => theme.colors.yellow};
   }
 `;
