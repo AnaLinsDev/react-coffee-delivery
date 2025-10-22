@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.fonts.regular};
+    color: ${({ theme }) => theme.colors["base-text"]};
+    font-family: ${({ theme }) => theme.fonts.families.roboto.family} !important;
     -webkit-font-smoothing: antialiased;
   }
 

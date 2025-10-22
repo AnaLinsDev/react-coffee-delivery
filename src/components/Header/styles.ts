@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const LogoContainer = styled.img`
@@ -11,31 +12,44 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   margin: 2rem 10rem;
   height: 2.5rem;
+`;
 
-  nav {
-    display: flex;
-    gap: 0.5rem;
+export const CartAdressInfo = styled.div`
+  display: flex;
+  gap: 12px;
+`;
 
-    a {
-      width: 3rem;
-      height: 3rem;
+export const AddressInfo = styled.header`
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 4px;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  min-width: 144px;
+  height: 38px;
+  padding: 8px;
+  border-radius: 6px;
 
-      //color: {(props) => props.theme["gray-100"]};
+  color: ${({ theme }) => theme.colors["purple-dark"]};
+  background-color: ${({ theme }) => theme.colors["purple-light"]};
+`;
 
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid transparent;
+export const ButtonCarHeader = styled(NavLink)`
+  display: inline-flex;
+  align-items: center;
 
-      &:hover {
-        // border-bottom: 3px solid {(props) => props.theme["green-500"]};
-      }
+  padding: 8px;
+  border-radius: 6px;
 
-      &.active {
-        //color: {(props) => props.theme["green-500"]};
-      }
-    }
+  color: ${({ theme }) => theme.colors["yellow-dark"]};
+  background-color: ${({ theme }) => theme.colors["yellow-light"]};
+
+  &:hover {
+    color: ${({ theme }) => theme.colors["yellow"]};
+  }
+
+  &.active {
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors["yellow"]};
   }
 `;

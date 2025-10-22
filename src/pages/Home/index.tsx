@@ -1,5 +1,5 @@
 import { HomeContainer } from "./styles";
 
 export function HomePage() {
-  return <HomeContainer>Teste</HomeContainer>;
+  return <HomeContainer>HOME</HomeContainer>;
 }
