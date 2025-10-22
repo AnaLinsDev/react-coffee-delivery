@@ -52,9 +52,9 @@ npm install
 npm run dev
 ```
 
-### Annotations
+### Study Notes
 
-#### Router básico:
+#### Configure Router básico:
 
 1 - Crie o arquivo routes.ts
     Nele, utilize os componentes <Routes> e <Route> para definir cada rota, especificando o path e o componente que será renderizado.
@@ -64,3 +64,18 @@ npm run dev
 
 3 - Configure o BrowserRouter no main.tsx
     Envolva o <App> com o <BrowserRouter> para habilitar o sistema de rotas na aplicação.
+
+#### Configure Theme + Styles básico:
+
+1 - Crie a const defaultTheme em default.ts
+
+2 - Crie a GlobalStyle em globals.ts usando o createGlobalStyle
+    Ele será o estilo geral do app.
+
+3 - Crie o arquivo styles.d.ts
+    Ele sobrescreve a interface DefaultTheme com o tipo do seu tema.
+
+4 - No App.tsx importe o ThemeProvider e GlobalStyle
+    - Colocar ThemeProvider ao redor do App e usar defaultTheme
+    - Usar o GlobalStyle no mesmo nível do Routes
+

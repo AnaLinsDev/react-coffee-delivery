@@ -1,5 +1,13 @@
 import { AppRoutes } from "./routes";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./styles/globals";
+import { defaultTheme } from "./styles/themes/default";
 
 export function App() {
-  return <AppRoutes />;
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <AppRoutes />
+    </ThemeProvider>
+  );
 }
