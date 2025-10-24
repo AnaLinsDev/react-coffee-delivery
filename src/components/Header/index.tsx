@@ -5,7 +5,7 @@ import {
   AddressInfo,
   CartAdressInfo,
 } from "./styles";
-import logoCoffee from "../../assets/logo.png";
+import logoCoffee from "/logo.png";
 import { ShoppingCart, MapPin } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 
@@ -25,6 +25,7 @@ export function Header() {
           <ShoppingCart weight="fill" size={18} />
         </ButtonCarHeader>
       </CartAdressInfo>
+      
     </HeaderContainer>
   );
 }

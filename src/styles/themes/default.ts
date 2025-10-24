@@ -21,7 +21,6 @@ export const defaultTheme = {
     background: "#FAFAFA",
     white: "#FFFFFF",
   },
-
   fonts: {
     baloo2: {
       family: "'Baloo 2', sans-serif",
@@ -30,11 +29,11 @@ export const defaultTheme = {
       lineHeight: "130%",
 
       text: {
-        xl: { fontSize: "48px", fontWeight: 800 },
-        l: { fontSize: "32px", fontWeight: 800 },
-        m: { fontSize: "24px", fontWeight: 800 },
-        s: { fontSize: "20px", fontWeight: 700 },
-        xs: { fontSize: "18px", fontWeight: 700 },
+        xl: { fontSize: "3rem", fontWeight: 800 }, // 48px
+        l: { fontSize: "2rem", fontWeight: 800 }, // 32px
+        m: { fontSize: "1.5rem", fontWeight: 800 }, // 24px
+        s: { fontSize: "1.25rem", fontWeight: 700 }, // 20px
+        xs: { fontSize: "1.125rem", fontWeight: 700 }, // 18px
       },
     },
 
@@ -44,19 +43,21 @@ export const defaultTheme = {
       style: "normal",
 
       text: {
-        l: { fontSize: "20px", fontWeight: 600, lineHeight: "130%" },
-        m: { fontSize: "16px", fontWeight: 600, lineHeight: "130%" },
-        s: { fontSize: "14px", fontWeight: 400, lineHeight: "130%" },
-        xs: { fontSize: "12px", fontWeight: 700, lineHeight: "130%" },
+        l_regular: { fontSize: "1.25rem", fontWeight: 400, lineHeight: "130%" }, // 20px
+        m_regular: { fontSize: "1rem", fontWeight: 400, lineHeight: "130%" }, // 16px
+        l_bold: { fontSize: "1.25rem", fontWeight: 700, lineHeight: "130%" }, // 20px
+        m_bold: { fontSize: "1rem", fontWeight: 700, lineHeight: "130%" }, // 16px
+        s: { fontSize: "0.875rem", fontWeight: 400, lineHeight: "130%" }, // 14px
+        xs: { fontSize: "0.75rem", fontWeight: 700, lineHeight: "130%" }, // 12px
       },
 
       buttons: {
-        large: { fontSize: "14px", fontWeight: 400, lineHeight: "160%" },
-        medium: { fontSize: "12px", fontWeight: 700, lineHeight: "160%" },
+        large: { fontSize: "0.875rem", fontWeight: 400, lineHeight: "160%" }, // 14px
+        medium: { fontSize: "0.75rem", fontWeight: 700, lineHeight: "160%" }, // 12px
       },
 
       tags: {
-        default: { fontSize: "10px", fontWeight: 600, lineHeight: "130%" },
+        default: { fontSize: "0.625rem", fontWeight: 700, lineHeight: "130%" }, // 10px
       },
     },
   },
