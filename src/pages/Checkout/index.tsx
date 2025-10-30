@@ -51,6 +51,10 @@ export function CheckoutPage() {
 
   const items = mountItems();
 
+  const total = items
+    .reduce((sum, item) => sum + item.price * item.quantity, 0)
+    .toFixed(2);
+
   return (
     <CheckoutContent>
       <CheckoutAddressPayment>
@@ -70,11 +74,15 @@ export function CheckoutPage() {
                   onChange={(e) => updateItems(item.id, Number(e.target.value))}
                 ></InputQuantity>
               </span>
-
-              <p className="price">R$ {item.price}</p>
+              
+              <p className="price">
+                R$ {(item.price * item.quantity).toFixed(2)}
+              </p>
             </CheckoutCardCoffee>
           );
         })}
+        <hr />
+        <h3>Total: {total}</h3>
       </CheckoutResume>
     </CheckoutContent>
   );

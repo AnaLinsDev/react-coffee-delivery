@@ -38,6 +38,7 @@ export const CheckoutCardCoffee = styled.div`
   img {
     width: 64px;
     height: 64px;
+    margin-right: 10px;
   }
 
   .price {
