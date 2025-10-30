@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.background};
+    background: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.baseText};
     font-family: ${({ theme }) => theme.fonts.roboto.family};
     font-size: ${({ theme }) => theme.fonts.roboto.text.s};

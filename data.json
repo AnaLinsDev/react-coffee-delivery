@@ -70,7 +70,7 @@
       "description": "Café expresso misturado com um pouco de leite quente e espuma",
       "tags": ["tradicional", "com leite"],
       "price": 9.90,
-      "image_name": "/coffees/mocaccino.png"
+      "image_name": "/coffees/mochaccino.png"
     },
     {
       "id": "9",

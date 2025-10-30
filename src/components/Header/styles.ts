@@ -35,6 +35,7 @@ export const AddressInfo = styled.header`
 export const ButtonCarHeader = styled(NavLink)`
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
 
   padding: 8px;
   border-radius: 6px;
@@ -49,5 +50,18 @@ export const ButtonCarHeader = styled(NavLink)`
   &.active {
     font-weight: bold;
     color: ${({ theme }) => theme.colors.yellow};
+  }
+
+  .circle-quantity {
+    width: 15px;
+    height: 15px;
+
+    text-align: center;
+    margin-top: -30px;
+
+    border-radius: 100%;
+    font-size: 10px;
+    background-color: ${({ theme }) => theme.colors.yellowDark};
+    color: ${({ theme }) => theme.colors.yellowLight};
   }
 `;

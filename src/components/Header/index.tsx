@@ -1,3 +1,4 @@
+import { useCart } from "../../contextAPI/CartContext";
 import {
   HeaderContainer,
   LogoContainer,
@@ -10,6 +11,12 @@ import { ShoppingCart, MapPin } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 
 export function Header() {
+  const { state } = useCart();
+  const totalQuantity = state.items.reduce(
+    (sum, item) => sum + Number(item.quantity),
+    0
+  );
+
   return (
     <HeaderContainer>
       <NavLink to="/">
@@ -23,9 +30,11 @@ export function Header() {
         </AddressInfo>
         <ButtonCarHeader to="/checkout" className="nav-link">
           <ShoppingCart weight="fill" size={18} />
+          <p className="circle-quantity">
+            {totalQuantity}
+          </p>
         </ButtonCarHeader>
       </CartAdressInfo>
-      
     </HeaderContainer>
   );
 }

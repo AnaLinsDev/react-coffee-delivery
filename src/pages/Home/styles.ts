@@ -1,7 +1,7 @@
 // src/components/TestButton.tsx
 import styled from "styled-components";
 
-export const HomeContainer = styled.main``
+export const HomeContainer = styled.main``;
 
 export const HomePresentation = styled.div`
   display: flex;
@@ -82,5 +82,14 @@ export const IconHome = styled.div<IconHomeProps>`
   }};
 `;
 
+export const ListCoffees = styled.div`
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
 
-export const ListCoffees = styled.div``
+  h2 {
+    margin-bottom: 2rem;
+  }
+`;
